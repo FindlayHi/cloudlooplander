@@ -1,0 +1,319 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #00467f;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #00467f;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #00467f;
+    border: 2px solid #00467f;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #333;
+    font-weight: 500;
+}
+
+.navbar .btn-primary {
+    padding: 10px 20px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/industries_f509f164e8.webp'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.hero .subtitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero .btn-secondary {
+    margin-top: 20px;
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.feature {
+    max-width: 300px;
+}
+
+.feature h3 {
+    margin-bottom: 10px;
+}
+
+/* Course Details */
+.course-details {
+    background-color: #f7f7f7;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.detail {
+    max-width: 300px;
+}
+
+.detail h4 {
+    margin-bottom: 10px;
+}
+
+/* Instructors Section */
+.instructors {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.instructor-profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.instructor {
+    max-width: 200px;
+    text-align: center;
+}
+
+.instructor img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Testimonials */
+.testimonials {
+    background-color: #00467f;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.testimonial p {
+    font-size: 24px;
+    font-style: italic;
+}
+
+.testimonial h5 {
+    margin-top: 20px;
+    font-weight: normal;
+}
+
+/* Application Process */
+.application-process {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.step {
+    max-width: 250px;
+}
+
+.step h3 {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center; /* Ensures all text is centered */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Stacks the content vertically */
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
+    gap: 10px; /* Adds space between elements */
+}
+
+.footer-content .hosted img {
+    max-width: 150px; /* Adjusts the size of the logo */
+    margin-top: 10px;
+}
+
+.footer-content .hosted p {
+    margin: 0; /* Removes default margin for text */
+    font-size: 14px; /* Adjusts font size for smaller screens */
+}
+
+/* Responsive Styles */
+
+/* For tablets and small desktops */
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero .subtitle {
+        font-size: 20px;
+    }
+
+    .features, .details, .instructor-profiles, .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature, .detail, .step {
+        max-width: 90%;
+    }
+
+    .testimonial p {
+        font-size: 20px;
+    }
+}
+
+/* For smartphones */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero .subtitle {
+        font-size: 18px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .feature, .detail, .step {
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+/* For extra small screens */
+@media (max-width: 480px) {
+    .hero {
+        padding: 80px 10px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero .subtitle {
+        font-size: 16px;
+    }
+
+    .testimonial p {
+        font-size: 18px;
+    }
+
+    .testimonial h5 {
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
