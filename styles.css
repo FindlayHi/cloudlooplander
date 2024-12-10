@@ -140,12 +140,12 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    gap: 60px;
     margin-top: 40px;
 }
 
 .instructor {
-    max-width: 200px;
+    max-width: 300px;
     text-align: center;
 }
 
