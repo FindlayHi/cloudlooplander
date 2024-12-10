@@ -45,6 +45,10 @@ a {
     padding: 20px;
 }
 
+.logo img {
+    max-width: 150px;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -256,13 +260,17 @@ footer {
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center; /* Centers the navbar content */
     }
 
-    .navbar .nav-links {
-        flex-direction: column;
-        gap: 10px;
+    .logo {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .btn-primary {
         margin-top: 10px;
+        text-align: center;
     }
 
     .hero h1 {
@@ -315,5 +323,14 @@ footer {
 
     footer {
         padding: 20px;
+    }
+
+    .navbar {
+        align-items: center;
+    }
+
+    .btn-primary {
+        text-align: center;
+        width: 100%;
     }
 }
