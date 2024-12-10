@@ -7,7 +7,7 @@ body {
 
 iframe {
 max-width: 99%;
-    border:0px;
+border: 0px!important;
 }
 
 h1, h2, h3, h4, h5, h6 {
