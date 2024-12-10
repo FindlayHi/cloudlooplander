@@ -7,7 +7,6 @@ body {
 
 iframe {
 max-width: 99%;
-
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -265,7 +264,7 @@ footer {
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        align-items: center; /* Centers the navbar content */
+        align-items: center; 
     }
 
     .logo {
